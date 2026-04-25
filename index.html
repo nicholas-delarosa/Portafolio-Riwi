@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculación de la hoja de estilos -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portafolio - Nicholas De la Rosa</title>
+</head>
+<body>
+
+    <!-- Encabezado principal con nombre y menú de navegación -->
+    <header id="inicio">
+        <h1>Nicholas Andres De la Rosa Rivera</h1>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <!-- Enlace hacia la página secundaria de mascotas -->
+            <a href="./pages/mascotas.html">Mis Mascotas</a>
+        </nav>
+    </header>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <img src="./img/me1.jpg" alt="Foto de Nicholas De la Rosa">
+        <p>
+            Soy Nicholas De la Rosa, desarrollador en formación con enfoque en desarrollo de software y un fuerte
+            interés en ciberseguridad. Me especializo en crear proyectos prácticos como sistemas CRUD e inventarios,
+            priorizando código limpio, funcional y bien estructurado.
+        </p>
+        <p>
+            Me gusta entender a fondo cómo funcionan las cosas, optimizar soluciones y construir bases sólidas en
+            cada proyecto. Actualmente, estoy enfocado en seguir mejorando mis habilidades y fortalecer mi perfil
+            profesional como desarrollador.
+        </p>
+    </section>
+
+    <!-- Sección de proyectos con lista de enlaces -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>
+                <h3>DELTARUNE FAN PAGE</h3>
+                <p>
+                    Fan Page interactiva, tributo visual y sonoro al universo creado por Toby Fox.
+                    Diseñada con estética pixel-perfect.
+                </p>
+                <a href="https://deltarune-final.vercel.app/" target="_blank">Ver proyecto</a>
+                <p>Hecho con: HTML5, CSS3 y JS.</p>
+            </li>
+            <li>
+                <h3>Simulador Trivia DELTARUNE</h3>
+                <p>
+                    Simulador de trivia interactivo con arquitectura basada en eventos y manipulación del DOM.
+                </p>
+                <a href="https://nicholas-delarosa.github.io/deltarune-trivia/" target="_blank">Ver proyecto</a>
+                <p>Hecho con: HTML5, CSS3, JS y Luxon.</p>
+            </li>
+            <li>
+                <h3>Tienda Online</h3>
+                <p>
+                    Ecosistema de comercio electrónico con React Context API y Firebase para control de inventario.
+                </p>
+                <a href="https://tiendaonline-delarosa.vercel.app/" target="_blank">Ver proyecto</a>
+                <p>Hecho con: React JS, Vite, CSS3, Firebase.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de contacto con formulario básico -->
+    <section id="contacto">
+        <h2>Contáctame</h2>
+        <form action="https://formspree.io/f/mpqkwpeo" method="post">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Kris Dreemurr" required>
+
+            <label for="correo">Correo *</label>
+            <input type="email" id="correo" name="correo" placeholder="Ej: kris@example.com" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea name="mensaje" id="mensaje" rows="7" cols="50"
+                placeholder="¡Escribe tu mensaje aquí!" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+</body>
+</html>
