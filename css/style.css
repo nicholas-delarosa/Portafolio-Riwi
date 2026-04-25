@@ -88,11 +88,12 @@ section#sobre-mi h2 {
 }
 
 .sobre-mi-texto p {
-    max-width: 600px;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    max-width: 100%;
+    width: 90%;
+    padding: 10px 0 0 0;
     text-align: justify;
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.6;
 }
 
 /* =============================================
