@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Vinculación de la hoja de estilos -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Portafolio - Nicholas De la Rosa</title>
 </head>
 <body>
 
-    <!-- Encabezado principal con nombre y menú de navegación -->
+    <!-- Encabezado: convertido en contenedor flex para alinear nombre y nav -->
     <header id="inicio">
         <h1>Nicholas Andres De la Rosa Rivera</h1>
+        <!-- Navegación con flexbox para distribución uniforme de enlaces -->
         <nav class="menu">
             <a href="#inicio">Inicio</a>
             <a href="#sobre-mi">Sobre Mí</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
-            <!-- Enlace hacia la página secundaria de mascotas -->
             <a href="./pages/mascotas.html">Mis Mascotas</a>
         </nav>
     </header>
 
-    <!-- Sección "Sobre mí" -->
+    <!-- Sección "Sobre mí": flex row para imagen + texto lado a lado -->
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <img src="./img/me1.jpg" alt="Foto de Nicholas De la Rosa">
-        <p>
-            Soy Nicholas De la Rosa, desarrollador en formación con enfoque en desarrollo de software y un fuerte
-            interés en ciberseguridad. Me especializo en crear proyectos prácticos como sistemas CRUD e inventarios,
-            priorizando código limpio, funcional y bien estructurado.
-        </p>
-        <p>
-            Me gusta entender a fondo cómo funcionan las cosas, optimizar soluciones y construir bases sólidas en
-            cada proyecto. Actualmente, estoy enfocado en seguir mejorando mis habilidades y fortalecer mi perfil
-            profesional como desarrollador.
-        </p>
+        <div class="sobre-mi-contenido">
+            <img src="./img/me1.jpg" alt="Foto de Nicholas De la Rosa">
+            <div class="sobre-mi-texto">
+                <p>
+                    Soy Nicholas De la Rosa, desarrollador en formación con enfoque en desarrollo de software y un fuerte
+                    interés en ciberseguridad. Me especializo en crear proyectos prácticos como sistemas CRUD e inventarios,
+                    priorizando código limpio, funcional y bien estructurado.
+                </p>
+                <p>
+                    Me gusta entender a fondo cómo funcionan las cosas, optimizar soluciones y construir bases sólidas en
+                    cada proyecto. Actualmente, estoy enfocado en seguir mejorando mis habilidades y fortalecer mi perfil
+                    profesional como desarrollador.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- Sección de proyectos con lista de enlaces -->
+    <!-- Sección de proyectos: organizada con CSS Grid -->
     <section id="proyectos">
         <h2>Proyectos</h2>
-        <ul>
+        <!-- Contenedor grid para las tarjetas de proyectos -->
+        <ul class="proyectos-grid">
             <li>
+                <img src="./img/fanpage-img.png" alt="Captura de DELTARUNE FAN PAGE">
                 <h3>DELTARUNE FAN PAGE</h3>
                 <p>
                     Fan Page interactiva, tributo visual y sonoro al universo creado por Toby Fox.
@@ -52,6 +57,7 @@
                 <p>Hecho con: HTML5, CSS3 y JS.</p>
             </li>
             <li>
+                <img src="./img/trivia-img.png" alt="Captura de Trivia DELTARUNE">
                 <h3>Simulador Trivia DELTARUNE</h3>
                 <p>
                     Simulador de trivia interactivo con arquitectura basada en eventos y manipulación del DOM.
@@ -60,9 +66,10 @@
                 <p>Hecho con: HTML5, CSS3, JS y Luxon.</p>
             </li>
             <li>
+                <img src="./img/tienda-img.png" alt="Captura de Tienda Online">
                 <h3>Tienda Online</h3>
                 <p>
-                    Ecosistema de comercio electrónico con React Context API y Firebase para control de inventario.
+                    Ecosistema de comercio electrónico con React Context API y Firebase.
                 </p>
                 <a href="https://tiendaonline-delarosa.vercel.app/" target="_blank">Ver proyecto</a>
                 <p>Hecho con: React JS, Vite, CSS3, Firebase.</p>
@@ -70,7 +77,7 @@
         </ul>
     </section>
 
-    <!-- Sección de contacto con formulario básico -->
+    <!-- Sección de contacto -->
     <section id="contacto">
         <h2>Contáctame</h2>
         <form action="https://formspree.io/f/mpqkwpeo" method="post">
