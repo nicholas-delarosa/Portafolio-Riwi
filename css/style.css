@@ -1,0 +1,255 @@
+/* =============================================
+   ESTILOS GENERALES - PORTAFOLIO SEMANA 1
+   Aplica: tipografía, colores, modelo de caja,
+   hover en enlaces, sombras y bordes redondeados.
+   ============================================= */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos del documento base */
+html {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+/* =============================================
+   HEADER Y NAVEGACIÓN
+   ============================================= */
+
+header {
+    background-color: green;
+    padding: 16px 20px;
+    border-bottom: 2px solid darkgray;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Menú de navegación básico */
+nav.menu {
+    display: block;
+    padding: 8px 0;
+}
+
+nav.menu a {
+    color: white;
+    margin-right: 16px;
+    font-size: 1rem;
+}
+
+/* Hover en los enlaces del menú */
+nav.menu a:hover {
+    color: yellow;
+}
+
+/* =============================================
+   SECCIONES
+   ============================================= */
+
+/* Espaciado general de las secciones */
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+/* Imagen del "Sobre mí" */
+section#sobre-mi img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16px;
+    /* Borde redondeado y sombra */
+    border: 4px solid green;
+    border-radius: 10px;
+    box-shadow: 0 0 12px green;
+}
+
+section#sobre-mi p {
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* =============================================
+   PROYECTOS
+   ============================================= */
+
+/* Lista de proyectos */
+ul {
+    padding: 0;
+}
+
+ul li {
+    background-color: #0a0a0a;
+    border: 4px solid green;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    /* Sombra en las tarjetas de proyectos */
+    box-shadow: 0 0 10px green;
+    max-width: 500px;
+}
+
+ul li h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+ul li p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* Hover en los enlaces de proyectos */
+ul li a {
+    color: white;
+}
+
+ul li a:hover {
+    color: yellow;
+}
+
+/* =============================================
+   FORMULARIO DE CONTACTO
+   ============================================= */
+
+section#contacto {
+    display: block;
+}
+
+form {
+    display: block;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Hover y focus en los inputs */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 8px red;
+}
+
+form button {
+    margin-top: 16px;
+    padding: 10px 24px;
+    background-color: black;
+    color: white;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: yellow;
+    border-color: red;
+}
+
+/* =============================================
+   PÁGINA DE MASCOTAS
+   ============================================= */
+
+/* Galería: apilada en una sola columna (Semana 1 no usa Grid todavía) */
+.galeria-mascotas {
+    display: block;
+    padding: 20px;
+}
+
+.galeria-mascotas article {
+    background-color: #0a0a0a;
+    border: 4px solid green;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    /* Sombra en los artículos de mascotas */
+    box-shadow: 0 0 10px green;
+    max-width: 500px;
+}
+
+/* Imágenes de mascotas responsivas */
+.galeria-mascotas img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-bottom: 4px solid green;
+    border-radius: 6px 6px 0 0;
+}
+
+.galeria-mascotas h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.galeria-mascotas p {
+    padding: 0 16px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Botón de retorno en mascotas.html */
+.btn-mascotas {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-mascotas a {
+    color: white;
+    background-color: black;
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    box-shadow: 0 0 8px green;
+}
+
+.btn-mascotas a:hover {
+    color: yellow;
+    border-color: red;
+}
