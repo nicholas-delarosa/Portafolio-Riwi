@@ -1,9 +1,3 @@
-/* =============================================
-   ESTILOS - PORTAFOLIO SEMANA 2
-   Mejoras: Flexbox en header/nav, CSS Grid en
-   proyectos y galería de mascotas.
-   ============================================= */
-
 /* Reset básico */
 * {
     margin: 0;
@@ -327,4 +321,158 @@ section.galeria-mascotas article:hover {
 .btn-mascotas a:hover {
     color: yellow;
     border-color: red;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+/* Tablet: 768px y menores */
+@media (max-width: 768px) {
+    html {
+        font-size: 1.1rem;
+    }
+
+    nav.menu {
+        position: sticky;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+        min-height: 56px;
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+        padding-top: 12px;
+        overflow: hidden;
+        transition: max-height 0.35s ease, opacity 0.35s ease;
+        max-height: 0;
+        opacity: 0;
+    }
+
+    .menu-links.open {
+        display: flex;
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .menu-links a {
+        width: 100%;
+        padding: 10px 4px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        font-size: 1rem;
+    }
+
+    header h1 {
+        padding: 16px 16px 0;
+    }
+
+    section.sobre-mi {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 20px;
+    }
+
+    section.sobre-mi img {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    section.sobre-mi p {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    ul.proyectos {
+        gap: 24px;
+        padding: 0 16px 32px;
+    }
+
+    ul.proyectos { grid-template-columns: 1fr; }
+
+    ul.proyectos li {
+        max-width: 100%;
+    }
+
+    ul.proyectos li:last-child:nth-child(odd) {
+        grid-column: span 1;
+        width: 100%;
+    }
+
+    ul.proyectos h2 {
+        width: 100%;
+    }
+
+    ul.proyectos p {
+        max-width: 80%;
+    }
+
+    form #nombre,
+    form #correo,
+    form #mensaje-formulario {
+        width: 100%;
+    }
+
+    section.contacto {
+        padding: 20px 16px 40px;
+    }
+
+    div.formulario form {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    section.galeria-mascotas {
+        padding: 10px 16px;
+        gap: 24px;
+        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columnas */
+    }
+}
+
+/* Mobile: 480px y menores */
+@media (max-width: 480px) {
+    html {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        padding: 12px 12px 0;
+    }
+
+    section.sobre-mi {
+        padding: 16px 12px;
+    }
+
+    ul.proyectos {
+        padding: 0 12px 24px;
+        gap: 20px;
+    }
+
+    section.contacto {
+        padding: 16px 12px 32px;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 10px 16px;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    section.galeria-mascotas {
+        grid-template-columns: 1fr; /* Mobile: 1 columna */
+    }
 }
